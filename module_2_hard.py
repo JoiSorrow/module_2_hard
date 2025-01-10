@@ -1,7 +1,7 @@
 def get_password(number):
     password = ''
     for i in range(1, number):
-        for j in range(2, number):
+        for j in range(i + 1, number):
             if j <= i:
                 continue
             if number % (i + j) == 0:
